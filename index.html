@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head><title>QR Redirect</title></head>
-<body><p>Redirecting...</p></body>
+<head>
+    <meta charset="UTF-8">
+    <!-- 1. Tells browsers never to cache this page so it updates instantly -->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+
+    <!-- 2. The instant backup redirect (0 seconds delay) -->
+    <meta http-equiv="refresh" content="0; url=https://your-current-destination.com">
+    
+    <title>Redirecting...</title>
+    
+    <!-- 3. The lightning-fast JavaScript redirect -->
+    <script type="text/javascript">
+        window.location.replace("https://your-current-destination.com");
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, <a href="https://your-current-destination.com">click here</a>.</p>
+</body>
 </html>
